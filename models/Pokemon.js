@@ -2,7 +2,7 @@ const mogoose = require('mongoose');
 
 const PokemonSchema = mogoose.Schema({
     id: {
-        type: String,
+        type: Number,
         require: true
     },
     nombre: {

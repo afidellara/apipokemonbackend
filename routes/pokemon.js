@@ -4,8 +4,9 @@ const controllerPokemon = require('../controller/pokemonController');
  
 // router.post('/',controllerProducto.crearProducto); 
 router.get('/',controllerPokemon.listarPokemon);
-// router.put('/:id', controllerProducto.actualizarProducto); 
-// router.get('/:id', controllerProducto.obtenerProducto);
+router.get('/:id', controllerPokemon.buscarPorId);
+router.get('/:nombre', controllerPokemon.buscarPokemonPorNombre); 
+
 // router.delete('/:id', controllerProducto.eliminarProducto);
  
 module.exports = router;    
