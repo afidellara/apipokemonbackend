@@ -57,6 +57,7 @@ async function consumirArregloAPIyGuardarEnMongoDB() {
             imagen_atras1: data.sprites.front_default,
             imagen_frente2: data.sprites.front_shiny,
             imagen_atras2: data.sprites.back_shiny,
+            tipos_nombre: data.types.map((type)=> type.type.name)
           // Agrega aquí más campos que deseas seleccionar
         };
   
