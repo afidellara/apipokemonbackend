@@ -20,7 +20,7 @@ exports.buscarPokemonPorNombre = async (req, res) => {
   
     try {
       // Buscar el Pokémon por su nombre en la base de datos (insensible a mayúsculas y minúsculas)
-      const pokemon = await Pokemon.findOne({ nombre: { $regex: new RegExp(nombre, 'i') } });
+      const pokemon = await PokemonHabilidades.findOne({ nombre: { $regex: new RegExp(nombre, 'i') } });
       
       if (pokemon) {
         // Si se encuentra el Pokémon, devolverlo como respuesta
