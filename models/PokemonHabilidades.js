@@ -40,6 +40,10 @@ const PokemonSchema = mogoose.Schema({
     tipos_nombre:{
         type: Array,
         require: true
+    },
+    estatisticas:{
+        type: Array,
+        require: true
     }
 
 }); 

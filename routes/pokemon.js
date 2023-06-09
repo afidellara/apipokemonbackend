@@ -4,7 +4,7 @@ const controllerPokemon = require('../controller/pokemonController');
  
 // router.post('/',controllerProducto.crearProducto); 
 
-router.get('/',controllerPokemon.listarPokemon);
+//router.get('/',controllerPokemon.listarPokemon);
 //router.get('/:id', controllerPokemon.buscarPorId);
 router.get('/habilidades/nombre/:nombre', controllerPokemon.buscarPokemonPorNombre); 
 router.get('/habilidades/', controllerPokemon.listarPokemonHabilidades); 

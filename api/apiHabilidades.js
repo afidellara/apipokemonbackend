@@ -37,8 +37,8 @@ async function fetchAndSavePokemonData() {
         imagen_png1: data.sprites.other.home.front_default,
         imagen_minipng2: data.sprites.front_default,
         imagen_minipng3: data.sprites.front_shiny,
-        tipos_nombre: data.types.map((type) => type.type.name)
-        // Agrega aquí más campos que deseas seleccionar
+        tipos_nombre: data.types.map((type) => type.type.name),
+        estatisticas: data.stats.map((type) => type.base_stat)
       };
 
       await collection.insertOne(documento);
